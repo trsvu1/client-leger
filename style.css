@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+}
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/ALUME.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+    filter: brightness(0), invert(1);
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20 px auto;
+}
+
+.titre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titre h1{
+    font-size: 70px;
+}
+
+.bouton{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bouton a{
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    color: #000;
+}
+
+.btn{
+    transition: 0.6s;
+}
+
+.btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* Styles pour la partie produits et catégories */
+.product-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-header h2 {
+    color: #080808;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.product-header p {
+    color: #666;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.product-item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-color: #FFFD55;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.product-category {
+    color: #666;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #080808;
+}
+
+.product-price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #080808;
+    margin-bottom: 15px;
+}
+
+.product-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #080808;
+    color: #FFFD55;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.product-btn:hover {
+    background-color: #FFFD55;
+    color: #080808;
+}
+
+/* Styles pour les catégories */
+.category-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.category-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.category-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.category-header h2 {
+    color: #080808;
+    font-size: 36px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.category-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.category-top {
+    padding: 25px 20px;
+    background: linear-gradient(45deg, #080808, #333333);
+    color: #FFFD55;
+    text-align: center;
+}
+
+.category-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.category-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.category-products {
+    padding: 20px;
+    background: #fff;
+}
+
+.product-list-item {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    transition: all 0.2s ease;
+}
+
+.product-list-item:last-child {
+    border-bottom: none;
+}
+
+.product-list-item:hover {
+    background-color: #f8f9fa;
+    padding-left: 18px;
+}
